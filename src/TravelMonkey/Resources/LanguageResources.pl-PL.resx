@@ -151,7 +151,7 @@
     <value>Nie wybrano zdjęcia</value>
   </data>
   <data name="NoPictureMessage" xml:space="preserve">
-    <value>Nie ma jeszcze zdjeć, wrzuć tu swoje najlepsze! 📸</value>
+    <value>Nie ma jeszcze zdjęć, wrzuć tu swoje najlepsze! 📸</value>
   </data>
   <data name="NoTextEnteredAlertCancel" xml:space="preserve">
     <value>OK</value>
