@@ -22,7 +22,7 @@ namespace TravelMonkey.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class LanguageResources {
+    public class LanguageResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace TravelMonkey.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TravelMonkey.Resources.LanguageResources", typeof(LanguageResources).Assembly);
@@ -51,7 +51,7 @@ namespace TravelMonkey.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to ADD NEW.
         /// </summary>
-        internal static string AddNewPictureLabel {
+        public static string AddNewPictureLabel {
             get {
                 return ResourceManager.GetString("AddNewPictureLabel", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Add Picture.
         /// </summary>
-        internal static string AddPictureButton {
+        public static string AddPictureButton {
             get {
                 return ResourceManager.GetString("AddPictureButton", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Add Picture.
         /// </summary>
-        internal static string AddPicturePageTitle {
+        public static string AddPicturePageTitle {
             get {
                 return ResourceManager.GetString("AddPicturePageTitle", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to I see {0}.
         /// </summary>
-        internal static string AddPictureResultDescription {
+        public static string AddPictureResultDescription {
             get {
                 return ResourceManager.GetString("AddPictureResultDescription", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to And I think I recognize {0}.
         /// </summary>
-        internal static string AddPictureResultLandmarkDescription {
+        public static string AddPictureResultLandmarkDescription {
             get {
                 return ResourceManager.GetString("AddPictureResultLandmarkDescription", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Something went wrong :( Here is a cat instead!.
         /// </summary>
-        internal static string BingSearchServiceCatInsteadTitle {
+        public static string BingSearchServiceCatInsteadTitle {
             get {
                 return ResourceManager.GetString("BingSearchServiceCatInsteadTitle", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Close.
         /// </summary>
-        internal static string CloseButtonText {
+        public static string CloseButtonText {
             get {
                 return ResourceManager.GetString("CloseButtonText", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to nothing! No description found.
         /// </summary>
-        internal static string ComputerVisionServiceNoDescription {
+        public static string ComputerVisionServiceNoDescription {
             get {
                 return ResourceManager.GetString("ComputerVisionServiceNoDescription", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Hi there,.
         /// </summary>
-        internal static string HiThereLabel {
+        public static string HiThereLabel {
             get {
                 return ResourceManager.GetString("HiThereLabel", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Please select an image first.
         /// </summary>
-        internal static string NoImageSelectedAlertContent {
+        public static string NoImageSelectedAlertContent {
             get {
                 return ResourceManager.GetString("NoImageSelectedAlertContent", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to No image selected.
         /// </summary>
-        internal static string NoImageSelectedAlertTitle {
+        public static string NoImageSelectedAlertTitle {
             get {
                 return ResourceManager.GetString("NoImageSelectedAlertTitle", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to No pictures yet, give me your best shots! 📸.
         /// </summary>
-        internal static string NoPictureMessage {
+        public static string NoPictureMessage {
             get {
                 return ResourceManager.GetString("NoPictureMessage", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to OK.
         /// </summary>
-        internal static string NoTextEnteredAlertCancel {
+        public static string NoTextEnteredAlertCancel {
             get {
                 return ResourceManager.GetString("NoTextEnteredAlertCancel", resourceCulture);
             }
@@ -180,7 +180,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to You didn&apos;t enter any text!.
         /// </summary>
-        internal static string NoTextEnteredAlertContent {
+        public static string NoTextEnteredAlertContent {
             get {
                 return ResourceManager.GetString("NoTextEnteredAlertContent", resourceCulture);
             }
@@ -189,7 +189,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to No text entered.
         /// </summary>
-        internal static string NoTextEnteredAlertTitle {
+        public static string NoTextEnteredAlertTitle {
             get {
                 return ResourceManager.GetString("NoTextEnteredAlertTitle", resourceCulture);
             }
@@ -198,7 +198,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to OK.
         /// </summary>
-        internal static string PictureFailedAlertCancel {
+        public static string PictureFailedAlertCancel {
             get {
                 return ResourceManager.GetString("PictureFailedAlertCancel", resourceCulture);
             }
@@ -207,7 +207,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Can you hand me my glasses? Something went wrong while analyzing this image.
         /// </summary>
-        internal static string PictureFailedAlertContent {
+        public static string PictureFailedAlertContent {
             get {
                 return ResourceManager.GetString("PictureFailedAlertContent", resourceCulture);
             }
@@ -216,16 +216,25 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Uh-oh!.
         /// </summary>
-        internal static string PictureFailedAlertTitle {
+        public static string PictureFailedAlertTitle {
             get {
                 return ResourceManager.GetString("PictureFailedAlertTitle", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Pictures.
+        /// </summary>
+        public static string PicturesLabelText {
+            get {
+                return ResourceManager.GetString("PicturesLabelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Recommendation.
         /// </summary>
-        internal static string ReccomendationLabel {
+        public static string ReccomendationLabel {
             get {
                 return ResourceManager.GetString("ReccomendationLabel", resourceCulture);
             }
@@ -234,7 +243,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Cancel.
         /// </summary>
-        internal static string TakePhotoActionSheetCancel {
+        public static string TakePhotoActionSheetCancel {
             get {
                 return ResourceManager.GetString("TakePhotoActionSheetCancel", resourceCulture);
             }
@@ -243,7 +252,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Choose photo.
         /// </summary>
-        internal static string TakePhotoActionSheetChoose {
+        public static string TakePhotoActionSheetChoose {
             get {
                 return ResourceManager.GetString("TakePhotoActionSheetChoose", resourceCulture);
             }
@@ -252,7 +261,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Take photo.
         /// </summary>
-        internal static string TakePhotoActionSheetTake {
+        public static string TakePhotoActionSheetTake {
             get {
                 return ResourceManager.GetString("TakePhotoActionSheetTake", resourceCulture);
             }
@@ -261,7 +270,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to What do you want to do?.
         /// </summary>
-        internal static string TakePhotoActionSheetTitle {
+        public static string TakePhotoActionSheetTitle {
             get {
                 return ResourceManager.GetString("TakePhotoActionSheetTitle", resourceCulture);
             }
@@ -270,7 +279,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Tap to add picture.
         /// </summary>
-        internal static string TapToAddPictureLabel {
+        public static string TapToAddPictureLabel {
             get {
                 return ResourceManager.GetString("TapToAddPictureLabel", resourceCulture);
             }
@@ -279,7 +288,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Need to translate something?.
         /// </summary>
-        internal static string TranslateTextEntryPlaceholder {
+        public static string TranslateTextEntryPlaceholder {
             get {
                 return ResourceManager.GetString("TranslateTextEntryPlaceholder", resourceCulture);
             }
@@ -288,7 +297,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to OK.
         /// </summary>
-        internal static string TranslationFailedAlertCancel {
+        public static string TranslationFailedAlertCancel {
             get {
                 return ResourceManager.GetString("TranslationFailedAlertCancel", resourceCulture);
             }
@@ -297,7 +306,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to We lost our dictionary, something went wrong while translating.
         /// </summary>
-        internal static string TranslationFailedAlertContent {
+        public static string TranslationFailedAlertContent {
             get {
                 return ResourceManager.GetString("TranslationFailedAlertContent", resourceCulture);
             }
@@ -306,7 +315,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Whoops!.
         /// </summary>
-        internal static string TranslationFailedAlertTitle {
+        public static string TranslationFailedAlertTitle {
             get {
                 return ResourceManager.GetString("TranslationFailedAlertTitle", resourceCulture);
             }
@@ -315,7 +324,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Enter text to translate.
         /// </summary>
-        internal static string TranslationResultPageEntryPlaceholder {
+        public static string TranslationResultPageEntryPlaceholder {
             get {
                 return ResourceManager.GetString("TranslationResultPageEntryPlaceholder", resourceCulture);
             }
@@ -324,7 +333,7 @@ namespace TravelMonkey.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Where do you want to go?.
         /// </summary>
-        internal static string WhereDoYouWantLabel {
+        public static string WhereDoYouWantLabel {
             get {
                 return ResourceManager.GetString("WhereDoYouWantLabel", resourceCulture);
             }

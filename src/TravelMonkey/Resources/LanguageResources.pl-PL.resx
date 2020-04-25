@@ -118,96 +118,96 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddNewPictureLabel" xml:space="preserve">
-    <value>ADD NEW</value>
+    <value>DODAJ</value>
   </data>
   <data name="AddPictureButton" xml:space="preserve">
-    <value>Add Picture</value>
+    <value>Dodaj zdjęcie</value>
   </data>
   <data name="AddPicturePageTitle" xml:space="preserve">
-    <value>Add Picture</value>
+    <value>Dodaj zdjęcie</value>
   </data>
   <data name="AddPictureResultDescription" xml:space="preserve">
-    <value>I see {0}</value>
+    <value>Widzę tu {0}</value>
   </data>
   <data name="AddPictureResultLandmarkDescription" xml:space="preserve">
-    <value>And I think I recognize {0}</value>
+    <value>Myślę, że rozpoznaję {0}</value>
   </data>
   <data name="BingSearchServiceCatInsteadTitle" xml:space="preserve">
-    <value>Something went wrong :( Here is a cat instead!</value>
+    <value>Coś poszło nie tak :( Kotek w zamian</value>
   </data>
   <data name="CloseButtonText" xml:space="preserve">
-    <value>Close</value>
+    <value>Zamknij</value>
   </data>
   <data name="ComputerVisionServiceNoDescription" xml:space="preserve">
-    <value>nothing! No description found</value>
+    <value>nic! Brak opisu!</value>
   </data>
   <data name="HiThereLabel" xml:space="preserve">
-    <value>Hi there,</value>
+    <value>No hej,</value>
   </data>
   <data name="NoImageSelectedAlertContent" xml:space="preserve">
-    <value>Please select an image first</value>
+    <value>Najpierw wybierz zdjęcie</value>
   </data>
   <data name="NoImageSelectedAlertTitle" xml:space="preserve">
-    <value>No image selected</value>
+    <value>Nie wybrano zdjęcia</value>
   </data>
   <data name="NoPictureMessage" xml:space="preserve">
-    <value>No pictures yet, give me your best shots! 📸</value>
+    <value>Nie ma jeszcze zdjeć, wrzuć tu swoje najlepsze! 📸</value>
   </data>
   <data name="NoTextEnteredAlertCancel" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="NoTextEnteredAlertContent" xml:space="preserve">
-    <value>You didn't enter any text!</value>
+    <value>Nie wpisano żadnego tekstu</value>
   </data>
   <data name="NoTextEnteredAlertTitle" xml:space="preserve">
-    <value>No text entered</value>
+    <value>Brak tekstu</value>
   </data>
   <data name="PictureFailedAlertCancel" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="PictureFailedAlertContent" xml:space="preserve">
-    <value>Can you hand me my glasses? Something went wrong while analyzing this image</value>
+    <value>Podasz mi okulary? Coś poszło nie tak przy analizie tego zdjęcia</value>
   </data>
   <data name="PictureFailedAlertTitle" xml:space="preserve">
-    <value>Uh-oh!</value>
+    <value>Ojej!</value>
   </data>
   <data name="PicturesLabelText" xml:space="preserve">
-    <value>Pictures</value>
+    <value>Zdjęcia</value>
   </data>
   <data name="ReccomendationLabel" xml:space="preserve">
-    <value>Recommendation</value>
+    <value>Rekomendowane</value>
   </data>
   <data name="TakePhotoActionSheetCancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Anuluj</value>
   </data>
   <data name="TakePhotoActionSheetChoose" xml:space="preserve">
-    <value>Choose photo</value>
+    <value>Wybierz zdjęcie z galerii</value>
   </data>
   <data name="TakePhotoActionSheetTake" xml:space="preserve">
-    <value>Take photo</value>
+    <value>Zrób zdjęcie</value>
   </data>
   <data name="TakePhotoActionSheetTitle" xml:space="preserve">
-    <value>What do you want to do?</value>
+    <value>Co chcesz zrobić?</value>
   </data>
   <data name="TapToAddPictureLabel" xml:space="preserve">
-    <value>Tap to add picture</value>
+    <value>Dotknij aby dodać zdjęcie</value>
   </data>
   <data name="TranslateTextEntryPlaceholder" xml:space="preserve">
-    <value>Need to translate something?</value>
+    <value>Coś przetłumaczyć?</value>
   </data>
   <data name="TranslationFailedAlertCancel" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="TranslationFailedAlertContent" xml:space="preserve">
-    <value>We lost our dictionary, something went wrong while translating</value>
+    <value>Zgubiłem słownik, coś poszło nie tak przy tłumaczeniu</value>
   </data>
   <data name="TranslationFailedAlertTitle" xml:space="preserve">
-    <value>Whoops!</value>
+    <value>Ups!</value>
   </data>
   <data name="TranslationResultPageEntryPlaceholder" xml:space="preserve">
-    <value>Enter text to translate</value>
+    <value>Wprowadź tekst do przetłumaczenia</value>
   </data>
   <data name="WhereDoYouWantLabel" xml:space="preserve">
-    <value>Where do you want to go?</value>
+    <value>Dokąd chcesz się udać?</value>
   </data>
 </root>
