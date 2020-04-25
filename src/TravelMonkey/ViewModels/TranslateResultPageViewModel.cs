@@ -49,5 +49,11 @@ namespace TravelMonkey.ViewModels
 
             Translations = result.Translations;
         }
+
+        public Command<string> SpeakTextCommand => new Command<string>(async language =>
+        {
+            var translation = _translations[language];
+            await SpeechService.SpeakAsync(translation, language);
+        });
     }
 }

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:effect="clr-namespace:TravelMonkey.Effects" xmlns:converters="clr-namespace:TravelMonkey.Converters" xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" x:Class="TravelMonkey.Views.TranslationResultPage" BackgroundColor="#F3F3F3">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:effect="clr-namespace:TravelMonkey.Effects" xmlns:converters="clr-namespace:TravelMonkey.Converters" xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" x:Class="TravelMonkey.Views.TranslationResultPage" BackgroundColor="#F3F3F3" x:Name="TranslateResultPage">
     <ContentPage.Resources>
         <converters:LanguageCodeToDescriptionConverter x:Key="LanguageCodeToDescriptionConverter" />
     </ContentPage.Resources>
@@ -17,7 +17,7 @@
                 <StackLayout BindableLayout.ItemsSource="{Binding Translations}" Padding="10">
                     <BindableLayout.EmptyViewTemplate>
                         <DataTemplate>
-                            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                                 <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontFamily="LatoRegular" FontSize="15">No bueno translationo 🤷‍♀️</Label>
                             </Grid>
                         </DataTemplate>
@@ -26,6 +26,9 @@
                         <DataTemplate>
                             <yummy:PancakeView BackgroundColor="White" Margin="7" CornerRadius="10" HasShadow="True">
                                 <Grid Margin="10">
+                                    <Grid.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.SpeakTextCommand, Source={x:Reference TranslateResultPage}}" CommandParameter="{Binding Key}" />
+                                    </Grid.GestureRecognizers>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="0.17*" />
                                         <ColumnDefinition Width="*" />
