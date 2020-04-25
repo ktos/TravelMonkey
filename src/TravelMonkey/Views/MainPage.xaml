@@ -56,7 +56,7 @@
                             </Grid.ColumnDefinitions>
                             <StackLayout Grid.Column="0" Margin="20,0,0,0" Spacing="0" VerticalOptions="Center">
                                 <Label Text="{Binding CurrentDestination.Title}" FontSize="24" FontFamily="LatoBold" TextColor="Black" />
-                                <Label Text="Recommendation" TextColor="#666" FontSize="16" FontFamily="LatoRegular" />
+                                <Label Text="{x:Static res:LanguageResources.ReccomendationLabel}" TextColor="#666" FontSize="16" FontFamily="LatoRegular" />
                             </StackLayout>
                         </Grid>
                     </yummy:PancakeView>
@@ -65,7 +65,7 @@
 
             <!-- Pictures -->
             <StackLayout Orientation="Horizontal">
-                <Label HorizontalOptions="Start" VerticalOptions="Center" Text="Pictures" FontFamily="LatoBold" FontSize="20" Margin="20,20,20,0" TextColor="Black" />
+                <Label HorizontalOptions="Start" VerticalOptions="Center" Text="{x:Static res:LanguageResources.PicturesLabelText}" FontFamily="LatoBold" FontSize="20" Margin="20,20,20,0" TextColor="Black" />
                 <Label HorizontalOptions="EndAndExpand" VerticalOptions="Center" TextColor="#2687ee" Text="{x:Static res:LanguageResources.AddNewPictureLabel}" FontSize="12" FontFamily="LatoBold" Margin="20,20,20,0">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="AddNewPicture_Tapped" />
