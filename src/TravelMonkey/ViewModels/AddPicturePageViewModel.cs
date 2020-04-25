@@ -4,6 +4,7 @@ using Plugin.Media;
 using Plugin.Media.Abstractions;
 using TravelMonkey.Data;
 using TravelMonkey.Models;
+using TravelMonkey.Resources;
 using TravelMonkey.Services;
 using Xamarin.Forms;
 
@@ -16,8 +17,9 @@ namespace TravelMonkey.ViewModels
         public bool ShowImagePlaceholder => !ShowPhoto;
         public bool ShowPhoto => _photoSource != null;
 
-        MediaFile _photo;
-        StreamImageSource _photoSource;
+        private MediaFile _photo;
+        private StreamImageSource _photoSource;
+
         public StreamImageSource PhotoSource
         {
             get => _photoSource;
@@ -32,6 +34,7 @@ namespace TravelMonkey.ViewModels
         }
 
         private bool _isPosting;
+
         public bool IsPosting
         {
             get => _isPosting;
@@ -39,6 +42,7 @@ namespace TravelMonkey.ViewModels
         }
 
         private Color _pictureAccentColor = Color.SteelBlue;
+
         public Color PictureAccentColor
         {
             get => _pictureAccentColor;
@@ -46,6 +50,7 @@ namespace TravelMonkey.ViewModels
         }
 
         private string _pictureDescription;
+
         public string PictureDescription
         {
             get => _pictureDescription;
@@ -67,16 +72,16 @@ namespace TravelMonkey.ViewModels
 
         private async Task TakePhoto()
         {
-            var result = await UserDialogs.Instance.ActionSheetAsync("What do you want to do?",
-                "Cancel", null, null, "Take photo", "Choose photo");
+            var result = await UserDialogs.Instance.ActionSheetAsync(LanguageResources.TakePhotoActionSheetTitle,
+                LanguageResources.TakePhotoActionSheetCancel, null, null, LanguageResources.TakePhotoActionSheetTake, LanguageResources.TakePhotoActionSheetChoose);
 
-            if (result.Equals("Take photo"))
+            if (result.Equals(LanguageResources.TakePhotoActionSheetTake))
             {
                 _photo = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions { PhotoSize = PhotoSize.Small });
 
                 PhotoSource = (StreamImageSource)ImageSource.FromStream(() => _photo.GetStream());
             }
-            else if (result.Equals("Choose photo"))
+            else if (result.Equals(LanguageResources.TakePhotoActionSheetChoose))
             {
                 _photo = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions { PhotoSize = PhotoSize.Small });
 
@@ -95,7 +100,7 @@ namespace TravelMonkey.ViewModels
         {
             if (_photo == null)
             {
-                await UserDialogs.Instance.AlertAsync("Please select an image first", "No image selected");
+                await UserDialogs.Instance.AlertAsync(LanguageResources.NoImageSelectedAlertContent, LanguageResources.NoImageSelectedAlertTitle);
                 return;
             }
 

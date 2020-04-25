@@ -1,4 +1,5 @@
 ﻿using System;
+using TravelMonkey.Resources;
 using TravelMonkey.ViewModels;
 using Xamarin.Forms;
 
@@ -17,7 +18,7 @@ namespace TravelMonkey.Views
                 Constants.TranslationFailedMessage,
                 async (s) =>
                 {
-                    await DisplayAlert("Whoops!", "We lost our dictionary, something went wrong while translating", "OK");
+                    await DisplayAlert(LanguageResources.TranslationFailedAlertTitle, LanguageResources.TranslationFailedAlertContent, LanguageResources.TranslationFailedAlertCancel);
                 });
 
             _translateResultPageViewModel.InputText = inputText;

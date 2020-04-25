@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.Azure.CognitiveServices.Search.ImageSearch;
 using TravelMonkey.Models;
+using TravelMonkey.Resources;
 
 namespace TravelMonkey.Services
 {
@@ -41,7 +42,7 @@ namespace TravelMonkey.Services
                 return new List<Destination> {
                     new Destination
                     {
-                        Title = "Something went wrong :( Here is a cat instead!",
+                        Title = LanguageResources.BingSearchServiceCatInsteadTitle,
                         ImageUrl = "https://cataas.com/cat",
                         MoreInfoUrl = "https://cataas.com/"
                     }

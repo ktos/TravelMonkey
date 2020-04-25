@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using TravelMonkey.Resources;
 using TravelMonkey.ViewModels;
 using Xamarin.Forms;
 
@@ -40,7 +41,7 @@ namespace TravelMonkey.Views
         {
             if (string.IsNullOrWhiteSpace(TranslateTextEntry.Text))
             {
-                await DisplayAlert("No text entered", "You didn't enter any text!", "OK");
+                await DisplayAlert(LanguageResources.NoTextEnteredAlertTitle, LanguageResources.NoTextEnteredAlertContent, LanguageResources.NoTextEnteredAlertCancel);
                 return;
             }
 

@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using TravelMonkey.Resources;
+using Xamarin.Forms;
 
 namespace TravelMonkey.Models
 {
@@ -9,13 +10,15 @@ namespace TravelMonkey.Models
         public Color AccentColor { get; }
         public bool Succeeded => !string.IsNullOrEmpty(Description) && AccentColor != Color.Default;
 
-        public AddPictureResult() { }
+        public AddPictureResult()
+        {
+        }
 
         public AddPictureResult(string description, Color accentColor, string landmarkDescription = "")
         {
-            Description = $"I see {description}";
+            Description = string.Format(LanguageResources.AddPictureResultDescription, description);
             AccentColor = accentColor;
-            LandmarkDescription = string.IsNullOrWhiteSpace(landmarkDescription) ? "" : $"And I think I recognize {landmarkDescription}";
+            LandmarkDescription = string.IsNullOrWhiteSpace(landmarkDescription) ? "" : string.Format(LanguageResources.AddPictureResultLandmarkDescription, landmarkDescription);
         }
     }
 }

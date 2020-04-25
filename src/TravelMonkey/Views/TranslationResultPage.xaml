@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:effect="clr-namespace:TravelMonkey.Effects" xmlns:converters="clr-namespace:TravelMonkey.Converters" xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" x:Class="TravelMonkey.Views.TranslationResultPage" BackgroundColor="#F3F3F3">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:effect="clr-namespace:TravelMonkey.Effects" xmlns:converters="clr-namespace:TravelMonkey.Converters" xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" xmlns:res="clr-namespace:TravelMonkey.Resources"  x:Class="TravelMonkey.Views.TranslationResultPage" BackgroundColor="#F3F3F3">
     <ContentPage.Resources>
         <converters:LanguageCodeToDescriptionConverter x:Key="LanguageCodeToDescriptionConverter" />
     </ContentPage.Resources>
@@ -9,15 +9,15 @@
                 <effect:SafeAreaPaddingEffect />
             </StackLayout.Effects>
 
-            <Button Text="Close" Clicked="Button_Clicked" HorizontalOptions="Center" FontFamily="LatoBold" TextColor="White" />
+            <Button Text="{x:Static res:LanguageResources.CloseButtonText}" Clicked="Button_Clicked" HorizontalOptions="Center" FontFamily="LatoBold" TextColor="White" />
 
-            <Entry Margin="15,0" Text="{Binding InputText, Mode=OneWay}" ReturnCommand="{Binding TranslateTextCommand}" ReturnCommandParameter="{Binding Text, Source={RelativeSource Mode=Self}}" FontSize="20" FontFamily="LatoRegular" BackgroundColor="Transparent" Placeholder="Enter text to translate" />
+            <Entry Margin="15,0" Text="{Binding InputText, Mode=OneWay}" ReturnCommand="{Binding TranslateTextCommand}" ReturnCommandParameter="{Binding Text, Source={RelativeSource Mode=Self}}" FontSize="20" FontFamily="LatoRegular" BackgroundColor="Transparent" Placeholder="{x:Static res:LanguageResources.TranslationResultPageEntryPlaceholder}" />
 
             <ScrollView>
                 <StackLayout BindableLayout.ItemsSource="{Binding Translations}" Padding="10">
                     <BindableLayout.EmptyViewTemplate>
                         <DataTemplate>
-                            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                                 <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontFamily="LatoRegular" FontSize="15">No bueno translationo 🤷‍♀️</Label>
                             </Grid>
                         </DataTemplate>

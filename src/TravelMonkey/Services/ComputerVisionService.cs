@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.Azure.CognitiveServices.Vision.ComputerVision;
 using Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models;
 using TravelMonkey.Models;
+using TravelMonkey.Resources;
 using Xamarin.Forms;
 
 namespace TravelMonkey.Services
@@ -22,7 +23,7 @@ namespace TravelMonkey.Services
                 var result = await _computerVisionClient.AnalyzeImageInStreamAsync(pictureStream, details: new[] { Details.Landmarks }, visualFeatures: new[] { VisualFeatureTypes.Color, VisualFeatureTypes.Description });
 
                 // Get most likely description
-                var description = result.Description.Captions.OrderByDescending(d => d.Confidence).FirstOrDefault()?.Text ?? "nothing! No description found";
+                var description = result.Description.Captions.OrderByDescending(d => d.Confidence).FirstOrDefault()?.Text ?? LanguageResources.ComputerVisionServiceNoDescription;
 
                 // Get accent color
                 var accentColor = Color.FromHex($"#{result.Color.AccentColor}");
